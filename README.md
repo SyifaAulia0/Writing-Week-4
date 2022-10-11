@@ -67,3 +67,31 @@ fetch("https://digimon-api.vercel.app/api/digimon")
     console.log(result)
   })
 ```
+## git dan github lanjutan
+### berkolaborasi menggunakan github
+- misal : A (team leader) membuat login, dan B (anggota) membuat register
+- Langkah-langkah di github :
+  1. buat repository organization, lalu invite anggota tim di fitur people, kemudian jadikan owner
+    - jika menggunakan repository masing2, maka repository harus diberi akses ke anggota tim lain, kemudian invite tim anggotanya
+  2. lalu buat repository, repo dibut public
+  3. lalu buat branch bernama dev
+- langkah selanjutnya pada git :
+  1. buka git
+  2. kemudian ketik git clone di git git clone untuk donlot repository ke file
+  3. anggota membuat branch dari dev (*semua anggota ahrus konsisten membuat nama branch*)
+  4. setiap anggota membuat branch masing2 
+    - orang A : git switch dev, git branch A-login, git switch A-login (*checkout dan switch fungsinya sama*)
+    - orang B : git switch dev, git branch B-register, git switch B-register 
+    (*jika hanya ada satu branch, maka semua file akan masuk langsung ke main dan akan ada banyak bug*)
+  5. buat file html , kemudian commit seperti biasa
+  6. jika sudah commit, maka push -> git push –u origin (namabranch)
+  7. lalu mengajukan pull request
+    - *jika tim leader* maka klik pull request, lalu merge pull request
+    - *jika anggota* klik request, lalu klik assign ke tim leader
+    -	Pull request : mengajukan permintaan branch punya kita ke branch lain
+  8. Jika tim leader sudah menerima request dari anggota, maka harus di cek dahulu dan kerjaannya sudah oke, maka beri label *buat label optional*
+  9. Lalu klik merge pull request
+  10. Lalu kembali ke git, dan kembali ke dev -> git switch dev
+  11. Kemudian masukan kodingan -> git pull
+
+

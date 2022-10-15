@@ -93,5 +93,85 @@ fetch("https://digimon-api.vercel.app/api/digimon")
   9. Lalu klik merge pull request
   10. Lalu kembali ke git, dan kembali ke dev -> git switch dev
   11. Kemudian masukan kodingan -> git pull
-
-
+## Responsive Web
+- Bertujuan membuat desain website kita dapat diakses dalam device apapun
+- Cara untuk membuat web responsive bermacam-macam :
+  1. meta viewport
+  2. max-width
+  3. relative unit
+  4. media query
+  5. flex
+  6. grid
+### meta viewport
+- Viewport : area web yg dapat diakses oleh user
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  //ini adalah meta viewport
+    <title>Document</title>
+  </head>
+```
+- tetapi, Cara dengan viewport kurang efektif/responsive
+### max-width
+```html
+//menambah gambar agar responsive
+//index.html
+<img src="aku.jpg" alt="">
+```
+```html
+//style.css
+img{
+  width: 100%;
+}  //maka output gambar, akan sebesar 100% dari layar
+``` 
+### relativ unit
+- macam-macam relative unit, diantaranya :
+  1. em : relative pada ukuran huruf parent terdekatnya
+    ```html
+     //index.html
+      <p class="rem">hallo ini dari rem</p>
+    ```
+    ```html
+    //style.css
+    .em {
+      font-size: 2em;
+    } //maka output font-size em = sebesar 40px
+    ```
+  2. rem: relative pada ukuran huruf dari root element
+    - Ukuran root html, kebanyakan 16px
+    ```html
+    //index.html
+    <p class="em">hallo ini dari em</p>
+    ```
+    ```html
+    //stle.css
+    .rem {
+    font-size: 2rem;
+    } //maka, output dari font 2 rem ini = sebesar 32px 
+    ```
+  3. vw: ukuran tinggi dari viewport
+    - 1vw = 1% dari ukuran viewport
+  4. vh : mengatur tinggi layar
+  5. % : mengambil ukuran parentnya
+### Media query
+- Media query : mengatur beberapa styling tegantung pada jenis device tertentu
+- Media query => @media ()
+```html
+@media (max-width: 600px ) {
+    .menu {
+      display: none;
+    }
+```
+## Boostrap
+- diciptakan oleh pencipta twitter
+- dapat diakses dengan berbagai cara 
+Layout
+Container : komponen wajib sblm menggunakan system grid
+System grid : 
+Jika ada 3 kolom, maka ada 12kolom bayangan, jadi 1 kolom memakan 4kolom bayangan
+Menggunakan 1 kolom lebih besar :
+3 kolom bayangan, 6kolom bayangan, 3 kolom bayangan
+Column

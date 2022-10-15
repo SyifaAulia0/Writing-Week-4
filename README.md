@@ -133,9 +133,7 @@ img{
     ```html
      //index.html
       <p class="rem">hallo ini dari rem</p>
-    ```
-    ```html
-    //style.css
+
     .em {
       font-size: 2em;
     } //maka output font-size em = sebesar 40px
@@ -145,9 +143,8 @@ img{
     ```html
     //index.html
     <p class="em">hallo ini dari em</p>
-    ```
-    ```html
-    //stle.css
+
+    //style.css
     .rem {
     font-size: 2rem;
     } //maka, output dari font 2 rem ini = sebesar 32px 
@@ -165,8 +162,8 @@ img{
       display: none;
     }
 ```
-## Boostrap
-- diciptakan oleh pencipta twitter
+## Bootstrap
+- diciptakan oleh programmer twitter, yaitu : Mark Octo dan Jacob Thornton
 - dapat diakses dengan berbagai cara 
 Layout
 Container : komponen wajib sblm menggunakan system grid

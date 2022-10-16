@@ -164,11 +164,40 @@ img{
 ```
 ## Bootstrap
 - diciptakan oleh programmer twitter, yaitu : Mark Octo dan Jacob Thornton
-- dapat diakses dengan berbagai cara 
-Layout
-Container : komponen wajib sblm menggunakan system grid
-System grid : 
-Jika ada 3 kolom, maka ada 12kolom bayangan, jadi 1 kolom memakan 4kolom bayangan
-Menggunakan 1 kolom lebih besar :
-3 kolom bayangan, 6kolom bayangan, 3 kolom bayangan
-Column
+- menggunakan bootstrap Lebih powerfull, menghemat waktu
+- Cara menggunakan bootstrap 
+  1. compile css dan java script 
+  2. dari source files (di download)
+  3. CDN (di copy paste)
+  4. download menggunakan npm
+### Menggunakan CDN
+- Pasang di dalam doctype
+- Pakai bootstrap beda fontnya
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </head>
+```
+### Layout
+- Layout : sesuatu yang berhubungan dengan styling
+### Breakpoint
+- Breakpoint : patahan atau tampilan jika diperkecil/ perbesar
+### Container
+- Container : fundamental jika ingin  melakukan sebuah layout
+- Container adalah layout basic bootstrap, dibutuhkan jika ingin menggunakann system grid pada bootstrap
+### System grid
+- System grid : Menyediakan sebesar 12 kolom system
+- system grid Menggunakan container, rows, columns untuk mengatur layout dan posisi dari kontennya
+- Dibuat menggunakan flex-box dan responsive
+- Col biasa : akan mengambil seperti saudaranya, sebesar 4 (dibagi rata)
+
+
